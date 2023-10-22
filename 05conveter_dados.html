@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Conversão de dados
+        //Primeira opção - Texto para número inteiro = parseInt()
+        //Segunda opção - Texto para número real - parseFloat()
+        // Terceira opção = número para texto - toString();
+        //obter notas
+        let nota1 = parseFloat(prompt("Informe a primeira nota: "));
+        let nota2 = parseFloat(prompt("Informe a segunda nota: "));
+
+        document.write(`Soma das notas: ${nota1+nota2}`);
+
+        //Realizar cálculo de média
+        let media = (nota1+nota2)/2;
+
+        //Operador ternário - opção para trabalhar com condicional simples
+        document.write(media >= 7 ? `Aprovado com média ${media.toFixed(2)}` : `Reprovado com média ${media.toFixed(2)}`);
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

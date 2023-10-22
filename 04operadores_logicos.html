@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+          E = &&
+          OU = ||
+          NÃO = !
+        */
+       let valor = prompt("Informe o valor da compra: ");
+       let tipoPagamento = confirm("Pagamento a vista?");
+
+       document.write(valor + " " + tipoPagamento);
+
+       if (valor >=200 && tipoPagamento == true)
+       {
+        document.write(`Total a pagar ${valor*0.9}`);//`concatenação
+       }
+       else
+       {
+            document.write(`Total a pagar ${valor}`);
+       }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
